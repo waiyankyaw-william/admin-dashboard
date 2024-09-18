@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- Wrapper -->
+      <div class="row g-0">
+        <!-- Left Side Nav -->
+        <nav class="col-2 bg-light pe-3">
+          <h1 class="h4 text-primary text-center py-3">
+            <i class="fas fa-ghost"></i>
+            <span class="d-none d-lg-inline">GHOST ADMIN</span>
+          </h1>
+
+          <div class="list-group text-center text-lg-start">
+            <a href="#" class="list-group-item d-none d-lg-block">CONTROLS</a>
+            <a href="#" class="list-group-item list-group-item-action active">
+              <i class="fas fa-home"></i>
+              <span class="d-none d-lg-inline">Dashboard</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-user"></i>
+              <span class="d-none d-lg-inline"
+                >Users
+                <span class="badge rounded-pill bg-danger float-end">20</span>
+              </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-chart-pie"></i>
+              <span class="d-none d-lg-inline">Statistics</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-file"></i>
+              <span class="d-none d-lg-inline">Reports</span>
+            </a>
+          </div>
+
+          <div class="list-group text-center text-lg-start mt-4">
+            <a href="#" class="list-group-item d-none d-lg-block">ACTIONS</a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-user"></i>
+              <span class="d-none d-lg-inline">New User</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-file-pen"></i>
+              <span class="d-none d-lg-inline">Update Data</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fas fa-plus"></i>
+              <span class="d-none d-lg-inline">Add Events</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Navbar + Main Content -->
+        <main class="col-10 bg-secondary">
+          <!-- Navbar -->
+          <nav class="navbar bg-light navbar-light navbar-expand">
+            <div class="flex-fill"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fas fa-user-circle"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <a href="#" class="dropdown-item">User Profile</a>
+                  <a href="#" class="dropdown-item">Logout</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-cog"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Main Content -->
+          <div class="container-fluid p-4">
+            <div class="row mt-2 mb-4">
+              <div class="col">
+                <div class="alert alert-info">
+                  <i class="fas fa-download"></i>
+                  A new version of admin dashboard is released.
+                  <a href="#">Download Now!</a>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="h6 text-white-50">QUICK STATS</h2>
+            <div class="row flex-column flex-lg-row">
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h3 class="h2 card-title">1,250</h3>
+                    <span class="text-success">
+                      <i class="fas fa-chart-line"></i>
+                      Daily visitors
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h3 class="h2 card-title">8,210</h3>
+                    <span class="text-success">
+                      <i class="fas fa-chart-line"></i>
+                      Weekly visitors
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h3 class="h2 card-title">12,560</h3>
+                    <span class="text-success">
+                      <i class="fas fa-chart-line"></i>
+                      Monthly visitors
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h3 class="h2 card-title">102,250</h3>
+                    <span class="text-success">
+                      <i class="fas fa-chart-line"></i>
+                      Yearly visitors
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row flex-column flex-lg-row mt-4">
+              <div class="col">
+                <h2 class="h6 text-white-50">LOCATION</h2>
+                <div class="card mb-3" style="height: 280px">
+                  <div class="card-body">
+                    <small class="text-muted">Regional</small>
+                    <div class="progress mt-2 mb-4" style="height: 5px">
+                      <div class="progress-bar bg-success w-25"></div>
+                    </div>
+                    <small class="text-muted">Global</small>
+                    <div class="progress mt-2 mb-4" style="height: 5px">
+                      <div class="progress-bar bg-primary w-75"></div>
+                    </div>
+                    <small class="text-muted">Local</small>
+                    <div class="progress mt-2 mb-4" style="height: 5px">
+                      <div class="progress-bar bg-warning w-50"></div>
+                    </div>
+                    <small class="text-muted">Internal</small>
+                    <div class="progress mt-2 mb-4" style="height: 5px">
+                      <div class="progress-bar bg-danger w-25"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <h2 class="h6 text-white-50">DATA</h2>
+                <div class="card" style="height: 280px">
+                  <div class="card-body">
+                    <div class="text-end">
+                      <button class="btn btn-sm btn-outline-secondary">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </button>
+                      <button class="btn btn-sm btn-outline-secondary">
+                        <i class="fas fa-arrow-up-short-wide"></i>
+                      </button>
+                      <button class="btn btn-sm btn-outline-secondary">
+                        <i class="fas fa-filter"></i>
+                      </button>
+                    </div>
+
+                    <table class="table">
+                      <tr>
+                        <th>ID</th>
+                        <th>Age Group</th>
+                        <th>Data</th>
+                        <th>Progress</th>
+                      </tr>
+
+                      <tr>
+                        <td>1</td>
+                        <td>20-30</td>
+                        <td>19%</td>
+                        <td>
+                          <i class="fas fa-chart-pie"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>2</td>
+                        <td>30-40</td>
+                        <td>40%</td>
+                        <td>
+                          <i class="fas fa-chart-column"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>3</td>
+                        <td>40-50</td>
+                        <td>20%</td>
+                        <td>
+                          <i class="fas fa-chart-simple"></i>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>4</td>
+                        <td>>50</td>
+                        <td>11%</td>
+                        <td>
+                          <i class="fas fa-chart-pie"></i>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="text-center text-muted py-4">&copy; Copyright 2020</footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/78063a680d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
